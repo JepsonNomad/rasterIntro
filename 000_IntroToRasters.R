@@ -12,12 +12,10 @@
 
 
 #### Load packages, set working directory ----
-install.packages(c("raster","rgdal"))
+install.packages(c("raster","rgdal", "here"))
 
 library(raster) # For working with raster datasets
 library(rgdal)  # For working with vector datsets
-
-setwd("/Users/christianjohn/Documents/Tutorials/rasterIntro/")
 
 
 #### Acquire data ----
@@ -26,7 +24,7 @@ setwd("/Users/christianjohn/Documents/Tutorials/rasterIntro/")
 ## Vector:
 # https://data.ca.gov/dataset/ca-geographic-boundaries/resource/3db1e426-fb51-44f5-82d5-a54d7c6e188b
 # Download the shapefile from the above source.
-CA = readOGR(dsn = "/Users/christianjohn/Downloads/ca-state-boundary/",
+CA = readOGR(dsn = "/PATH/TO/DOWNLOADS/ca-state-boundary/",
              layer = "CA_State_TIGER2016")
 # Always look at your data!
 str(CA)
