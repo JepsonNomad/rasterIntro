@@ -12,7 +12,7 @@
 
 
 #### Load packages, set working directory ----
-install.packages(c("raster","rgdal", "here"))
+install.packages(c("raster","rgdal"))
 
 library(raster) # For working with raster datasets
 library(rgdal)  # For working with vector datsets
